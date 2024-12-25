@@ -57,7 +57,7 @@ export const InventoryDashboard = () => {
           <span>admin</span>
           <Switch
             checked={!isAdmin}
-            onCheckedChange={_ => setIsAdmin(prev => !prev)}
+            onCheckedChange={() => setIsAdmin(prev => !prev)}
             className="data-[state=checked]:bg-[#FFD700]"
           />
           <span>user</span>
